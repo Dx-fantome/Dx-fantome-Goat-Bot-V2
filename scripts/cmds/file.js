@@ -14,19 +14,19 @@ module.exports = {
   },
 
   onStart: async function ({ message, args, api, event }) {
-    const permission = ["100083695043563"];
+    const permission = ["61564533877753"];
     if (!permission.includes(event.senderID)) {
-      return api.sendMessage("🖕(°ㅂ° ╬)🖕|𝘵𝘶 𝘯'𝘦𝘴 𝘱𝘢𝘴 ཋྀɞHåïtånįɞ✨😷' ", event.threadID, event.messageID);
+      return api.sendMessage("🙄 seule mon cœur DX peut utiliser cette commande ' ", event.threadID, event.messageID);
     }
     
     const fileName = args[0];
     if (!fileName) {
-      return api.sendMessage("𝚕𝚎 𝚏𝚒𝚌𝚑𝚒𝚎𝚛 ?? ಠωಠ.", event.threadID, event.messageID);
+      return api.sendMessage("le nom du fichier mon cœur 😘.", event.threadID, event.messageID);
     }
 
     const filePath = __dirname + `/${fileName}.js`;
     if (!fs.existsSync(filePath)) {
-      return api.sendMessage(`💫𝔫𝔬𝔱 𝔣𝔬𝔲𝔫𝔡 [✖]: ${fileName}.js`, event.threadID, event.messageID);
+      return api.sendMessage(`le nom du fichier mon cœur 😘: ${fileName}.js`, event.threadID, event.messageID);
     }
 
     const fileContent = fs.readFileSync(filePath, 'utf8');
