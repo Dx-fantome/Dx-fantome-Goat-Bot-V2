@@ -3,7 +3,7 @@ const axios = require("axios");
 const path = require("path");
 const { getPrefix } = global.utils;
 const { commands, aliases } = global.GoatBot;
-const doNotDelete = "༐⸙👻 𝗛𝗔𝗜𝗧𝗔𝗡𝗜 ❤️‍🔥༐⸙";
+const doNotDelete = "╚   ❀JEHOVANIE❀  ╝";
 /** 
 * @author NTKhang
 * @author: do not delete it
@@ -43,7 +43,7 @@ module.exports = {
 
   langs: {
     vi: {
-      help: "╭─────────────✿\n☄HAITANI CMD く命ཋྀ༅ \n├─────⭔\n│ Trang [ %2/%3 ]\n│ Hiện tại bot có %4 lệnh có thể sử dụng\n│ » Gõ %5help <số trang> để xem danh sách các lệnh\n│ » Gõ %5help để xem chi tiết cách sử dụng lệnh đó\n├────────❀\n│ %6\n╰─────────────✿",
+      help: "╭─────────────✿\n❀JEHOVANIE❀CMD く命ཋྀ༅ \n├─────⭔\n│ Trang [ %2/%3 ]\n│ Hiện tại bot có %4 lệnh có thể sử dụng\n│ » Gõ %5help <số trang> để xem danh sách các lệnh\n│ » Gõ %5help để xem chi tiết cách sử dụng lệnh đó\n├────────❀\n│ %6\n╰─────────────✿",
       attechment:fs.createReadStream("anjarara.jpg"),
       help2: "%1├───────❀\n│ » Hiện tại bot có %2 lệnh có thể sử dụng\n│ » Gõ %3help <tên lệnh> để xem chi tiết cách sử dụng lệnh đó\n│ %4\n╰─────────────✿",
       commandNotFound: "Lệnh \"%1\" không tồn tại",
@@ -61,8 +61,8 @@ module.exports = {
       pageNotFound: "Trang %1 không tồn tại"
     },
     en: {
-      help: "🕊️✨👻.༐⸙..𝐆𝐇𝐎𝐒𝐓..✭..❤️‍🔥..༐⸙ 💀\n\n%1\n━━━━━━━━━━━━━\n 𝗣𝗮𝗴𝗲 [ %2/%3 ]\n⇛👻 𝗷'𝗮𝗶 𝗮𝗰𝘁𝘂𝗲𝗹𝗹𝗲𝗺𝗲𝗻𝘁「 %4 」𝗖𝗠𝗗s \n⇛👻 𝗧𝗮𝗽𝗲: %5help <𝙿𝙰𝙶𝙴> 𝗽𝗼𝘂𝗿 𝗲𝗻 𝘀𝗮𝘃𝗼𝗶𝗿 𝗽𝗹𝘂𝘀\n⇛👻 » 𝗧𝗮𝗽𝗲: %5help 𝗽𝗼𝘂𝗿 𝘃𝗼𝗶𝗿 𝗹𝗲𝘀 𝗱𝗲𝘁𝗮𝗶𝗹𝘀 𝗱'𝘂𝘁𝗶𝗹𝗶𝘀𝗮𝘁𝗶𝗼𝗻 𝗱𝗲 𝗺𝗲𝘀 𝗰𝗼𝗺𝗺𝗮𝗻𝗱𝗲𝘀\n✰━━━━━━━━━━✰\n│ %6\n━━━━━━━━━━━━━",
-      help2: "%1\n⇛👻𝗹𝗲 𝗯𝗼𝘁 𝗮〚%2〛𝗖𝗠𝗗𝚜 𝘂𝘁𝗶𝗹𝗶𝘀𝗮𝗯𝗹𝗲𝘀\n⇛👻☆⊹ 𝗧𝗮𝗽𝗲: %3help ⊹☆ 𝗽𝗼𝘂𝗿 𝘃𝗼𝗶𝗿 𝗹𝗮 𝘁𝗼𝘁𝗮𝗹𝗶𝘁𝗲 𝗱𝗲 𝗺𝗲𝘀 𝗰𝗺𝗱\n ━━━━━━━━━━━━:\n%4\n━━━━━━━━━━━━",
+      help: "🤗.༐⸙..𝐆𝐇𝐎𝐒𝐓..✭..😘..༐⸙ 🥰\n\n%1\n━━━━━━━━━━━━━\n 𝗣𝗮𝗴𝗲 [ %2/%3 ]\n⇛🤗 𝗷'𝗮𝗶 𝗮𝗰𝘁𝘂𝗲𝗹𝗹𝗲𝗺𝗲𝗻𝘁「 %4 」𝗖𝗠𝗗s \n⇛👻 𝗧𝗮𝗽𝗲: %5help <𝙿𝙰𝙶𝙴> 𝗽𝗼𝘂𝗿 𝗲𝗻 𝘀𝗮𝘃𝗼𝗶𝗿 𝗽𝗹𝘂𝘀\n⇛👻 » 𝗧𝗮𝗽𝗲: %5help 𝗽𝗼𝘂𝗿 𝘃𝗼𝗶𝗿 𝗹𝗲𝘀 𝗱𝗲𝘁𝗮𝗶𝗹𝘀 𝗱'𝘂𝘁𝗶𝗹𝗶𝘀𝗮𝘁𝗶𝗼𝗻 𝗱𝗲 𝗺𝗲𝘀 𝗰𝗼𝗺𝗺𝗮𝗻𝗱𝗲𝘀\n✰━━━━━━━━━━✰\n│ %6\n━━━━━━━━━━━━━",
+      help2: "%1\n⇛😘𝗹𝗲 𝗯𝗼𝘁 𝗮〚%2〛𝗖𝗠𝗗𝚜 𝘂𝘁𝗶𝗹𝗶𝘀𝗮𝗯𝗹𝗲𝘀\n⇛😘☆⊹ 𝗧𝗮𝗽𝗲: %3help ⊹☆ 𝗽𝗼𝘂𝗿 𝘃𝗼𝗶𝗿 𝗹𝗮 𝘁𝗼𝘁𝗮𝗹𝗶𝘁𝗲 𝗱𝗲 𝗺𝗲𝘀 𝗰𝗺𝗱\n ━━━━━━━━━━━━:\n%4\n━━━━━━━━━━━━",
       commandNotFound: "𝗖𝗠𝗗 \"『%1』\" 𝗻'𝗲𝘅𝗶𝘀𝘁𝗲 𝗽𝗮𝘀",
       getInfoCommand: "╭── NAME ────✿\n %1\n├── INFO\n│ Description: %2\n│ Other names: %3\n│ Other names in your group: %4\n│ Version: %5\n│ Role: %6\n│ Time per command: %7s\n│ Author: %8\n├── Usage\n%9\n├── Notes\n│ The content inside <XXXXX> can be changed\n│ The content inside [a|b|c] is a or b or c\n╰──────❀",
       onlyInfo: "╭── INFO ────✿\n│ Command name: %1\n│ Description: %2\n│ Other names: %3\n│ Other names in your group: %4\n│ Version: %5\n│ Role: %6\n│ Time per command: %7s\n│ Author: %8\n╰─────────────✿",
