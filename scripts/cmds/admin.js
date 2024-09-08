@@ -46,8 +46,8 @@ module.exports = {
 
 	onStart: async function ({ message, args, usersData, event, getLang }) {
 		switch (args[0]) {
-			case "add":
-			case "-a": {
+			case "ajt":
+			case "-🧘🏾‍♂️": {
 				if (args[1]) {
 					let uids = [];
 					if (Object.keys(event.mentions).length > 0)
@@ -76,8 +76,8 @@ module.exports = {
 				else
 					return message.reply(getLang("missingIdAdd"));
 			}
-			case "remove":
-			case "-r": {
+			case "dag":
+			case "-🏌🏽‍♂️": {
 				if (args[1]) {
 					let uids = [];
 					if (Object.keys(event.mentions).length > 0)
